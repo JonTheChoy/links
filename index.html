@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre Empresa - Enlaces Profesionales</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            /* Paleta de colores técnica y sobria */
+            --fondo: #FFFDF9;         /* Blanco Hueso / Crema */
+            --azul-serio: #1A2A40;    /* Azul Medianoche para textos y recuadros */
+            --mostaza: #E9B44C;       /* Amarillo/Naranja cálido para botones */
+            --rojo-ladrillo: #9B2226; /* Rojo serio para el botón de cotizar */
+        }
+
+        body {
+            background-color: var(--fondo);
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--azul-serio);
+        }
+
+        /* HEADER: Los chiles abrazando el nombre */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .chile {
+            width: 15vw;
+            max-width: 60px;
+            height: auto;
+        }
+
+        .recuadro-nombre {
+            border: 2px solid var(--azul-serio);
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* CUERPO: Botones principales */
+        .container-links {
+            width: 100%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            background-color: var(--mostaza);
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: transform 0.1s;
+            box-shadow: 0 4px 0 rgba(0,0,0,0.05);
+        }
+
+        .btn:active {
+            transform: translateY(2px);
+            box-shadow: none;
+        }
+
+        /* Botón de Cotizar Destacado */
+        .btn-cotizar {
+            background-color: var(--rojo-ladrillo);
+            margin-top: 10px;
+        }
+
+        .piñata-icon {
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+
+        /* SECCIÓN DE REDES SOCIALES */
+        .redes-sociales {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .icon-link {
+            color: var(--azul-serio);
+            font-size: 1.6rem;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .icon-link:hover {
+            opacity: 0.7;
+        }
+
+        /* FOOTER: Cactus y despedida */
+        footer {
+            margin-top: auto;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .cactus-footer {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            opacity: 0.3; /* Sutil para mantener la sobriedad */
+            margin-top: 10px;
+        }
+
+        .texto-footer {
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="chile-izquierdo.png" alt="Chile Verde" class="chile">
+        
+        <div class="recuadro-nombre">
+            <h1>Nombre Empresa</h1>
+        </div>
+
+        <img src="chile-derecho.png" alt="Chile Rojo" class="chile">
+    </header>
+
+    <div class="container-links">
+        <a href="#" class="btn">📸 VER GALERÍA DE EVENTOS</a>
+        <a href="#" class="btn">📍 NUESTRA UBICACIÓN</a>
+        
+        <a href="https://wa.me/502XXXXXXXX?text=Hola,%20quisiera%20cotizar%20un%20evento" class="btn btn-cotizar">
+            <span class="piñata-icon">★</span> COTIZAR MI EVENTO
+        </a>
+    </div>
+
+    <div class="redes-sociales">
+        <a href="https://www.instagram.com/eltacofeliz_gt?ighs=MXI4cW9yMG05eWRldQ" class="icon-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1Ark5UjnbS/" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <footer>
+        <p class="texto-footer">Gracias por visitarnos</p>
+        <img src="cactus-despedida.png" alt="Cactus" class="cactus-footer">
+    </footer>
+
+</body>
+</html>
