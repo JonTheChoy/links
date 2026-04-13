@@ -142,6 +142,36 @@
             text-transform: uppercase;
             margin-bottom: 5px;
         }
+
+        .ubicaciones-waze {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .waze-group {
+        display: flex;
+        gap: 20px;
+        background: rgba(26, 42, 64, 0.05); /* Un fondo muy sutil */
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+
+    .waze-link {
+        color: var(--azul-serio);
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: bold;      
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .waze-link i {
+        font-size: 1.2rem;
+    }
     </style>
 </head>
 <body>
@@ -150,19 +180,32 @@
         <img src="chile-izquierdo.png" alt="Chile Verde" class="chile">
         
         <div class="recuadro-nombre">
-            <h1>Nombre Empresa</h1>
+            <h1>El Taco Feliz</h1>
         </div>
 
         <img src="chile-derecho.png" alt="Chile Rojo" class="chile">
     </header>
 
     <div class="container-links">
-        <a href="#" class="btn">📸 VER GALERÍA DE EVENTOS</a>
-        <a href="#" class="btn">📍 NUESTRA UBICACIÓN</a>
+        <a href="TU_ARCHIVO_CATALOGO.pdf" target="_blank" class="btn">
+            <i class="fa-solid fa-file-pdf"></i> Ver Menú
+        </a>
         
         <a href="https://wa.me/502XXXXXXXX?text=Hola,%20quisiera%20cotizar%20un%20evento" class="btn btn-cotizar">
             <span class="piñata-icon">★</span> COTIZAR MI EVENTO
         </a>
+    </div>
+
+    <div class="ubicaciones-waze">
+        <p style="font-size: 0.7rem; margin-bottom: 5px; opacity: 0.8;">📍 ABRIR EN WAZE:</p>
+        <div class="waze-group">
+            <a href="https://waze.com/ul/h9fxe4eked" class="waze-link">
+                <i class="fa-solid fa-location-dot"></i> Sede San Cristóbal
+            </a>
+            <a href="https://waze.com/ul/h9fxe0c3tj" class="waze-link">
+                <i class="fa-solid fa-location-dot"></i> Sede Milpas Altas
+            </a>
+        </div>
     </div>
 
     <div class="redes-sociales">
